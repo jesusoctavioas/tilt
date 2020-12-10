@@ -29,7 +29,7 @@ require (
 	github.com/go-sql-driver/mysql v1.5.0 // indirect
 	github.com/gofrs/uuid v3.2.0+incompatible // indirect
 	github.com/golang/protobuf v1.4.2
-	github.com/google/go-cmp v0.4.0
+	github.com/google/go-cmp v0.5.1
 	github.com/google/shlex v0.0.0-20181106134648-c34317bd91bf // indirect
 	github.com/google/uuid v1.1.1
 	github.com/google/wire v0.3.0
@@ -69,13 +69,15 @@ require (
 	github.com/tilt-dev/fsnotify v1.4.8-0.20200727200623-991e307aab7f
 	github.com/tilt-dev/go-get v0.0.0-20200911222649-1acd29546527
 	github.com/tilt-dev/localregistry-go v0.0.0-20200615231835-07e386f4ebd7
+	github.com/tilt-dev/pixeltilt v0.0.0-20200521161244-2657bdda97c9 // indirect
 	github.com/tilt-dev/wmclient v0.0.0-20201109174454-1839d0355fbc
 	github.com/tonistiigi/units v0.0.0-20180711220420-6950e57a87ea
 	github.com/whilp/git-urls v0.0.0-20160530060445-31bac0d230fa
 	go.opencensus.io v0.22.4
 	go.opentelemetry.io/otel v0.2.0
 	go.starlark.net v0.0.0-20200615180055-61b64bc45990
-	golang.org/x/sync v0.0.0-20200317015054-43a5402ce75a
+	golang.org/x/sync v0.0.0-20201020160332-67f06af15bc9
+	golang.org/x/tools/gopls v0.5.5 // indirect
 	google.golang.org/genproto v0.0.0-20200527145253-8367513e4ece
 	google.golang.org/grpc v1.29.1
 	gopkg.in/check.v1 v1.0.0-20200227125254-8fa46927fb4f // indirect
