@@ -7,6 +7,8 @@ import (
 	"github.com/pkg/errors"
 	"go.starlark.net/starlark"
 
+	"github.com/tilt-dev/tilt/internal/tiltfile/triggermode"
+
 	"github.com/tilt-dev/tilt/internal/tiltfile/links"
 
 	"github.com/tilt-dev/tilt/internal/tiltfile/starkit"
@@ -20,7 +22,7 @@ type localResource struct {
 	serveCmd      model.Cmd
 	workdir       string
 	deps          []string
-	triggerMode   triggerMode
+	triggerMode   triggermode.TriggerMode
 	autoInit      bool
 	repos         []model.LocalGitRepo
 	resourceDeps  []string
@@ -32,7 +34,7 @@ type localResource struct {
 func (s *tiltfileState) localResource(thread *starlark.Thread, fn *starlark.Builtin, args starlark.Tuple, kwargs []starlark.Tuple) (starlark.Value, error) {
 	var name string
 	var updateCmdVal, updateCmdBatVal, serveCmdVal, serveCmdBatVal starlark.Value
-	var triggerMode triggerMode
+	var triggerMode triggermode.TriggerMode
 
 	deps := value.NewLocalPathListUnpacker(thread)
 
